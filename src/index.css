@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@theme {
+  /* breakpoints*/
+  --breakpoint-sm: 412px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1440px;
+
+
+   /* colors */
+   --color-primary-100: #D1E8FA;
+   --color-primary-200: #A3D1F5;
+   --color-primary-300: #75B9F0;
+   --color-primary-400: #48A2EA;
+   --color-primary-500: #1A8BE5;
+   --color-primary-600: #156FB7;
+   --color-primary-700: #0F538A;
+   --color-primary-800: #0A385C;
+   --color-primary-900: #051C2E;
+ 
+   --color-Secondary-100: #FCF1CF;
+   --color-Secondary-200: #F8E4A0;
+   --color-Secondary-300: #F5D670;
+   --color-Secondary-400: #F2C840;
+   --color-Secondary-500: #EEBB11;
+   --color-Secondary-600: #BF950D;
+   --color-Secondary-700: #8F700A;
+   --color-Secondary-800: #5F4B07;
+   --color-Secondary-900: #302503;
+ 
+   --color-grey-100: #E1E5EA;
+   --color-grey-200: #C4CCD4;
+   --color-grey-300: #A6B2BF;
+   --color-grey-400: #8899AA;
+   --color-grey-500: #6B7F94;
+   --color-grey-600: #556677;
+   --color-grey-700: #404C59;
+   --color-grey-800: #2B333B;
+   --color-grey-900: #15191E;
+ 
+   --color-white: #F2F0EF;
+   --color-black: #0E1111;
+
+
+   --color-light: #F2F0EF;
+  --color-text: #0E1111;
+
+
+  --color-dark: #0E1111;
+  --color-text: #F2F0EF;
+
+
+  /* font families */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "crimson-text", serif;
+}
+
+
+:root {
+  --color-light: #F2F0EF;
+  --color-text: #0E1111;
+}
+
+
+.dark {
+  --color-dark: #0E1111;
+  --color-text: #F2F0EF;
+}
+
+
+/* typography settings */
+@utility header-sm {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+@utility header-md {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+@utility header-lg {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+@utility paragraph-sm {
+  font-weight: 500;
+  font-size: 10px;
+}
+
+
+@utility paragraph-md {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+@utility paragraph-lg {
+  font-weight: 500;
+  font-size: 30px;
+}
