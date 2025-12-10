@@ -1,33 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa";
 
-function Navbar() {
+const  Navbar = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
     return(
-        <div className="bg-white h-14 font-primary py-2.5 flex items-center">
-            <div className='mr-auto lg:pl-10'>
-                <img src="src\assets\logos\blue.svg" className="h-10"/>
+        <div className="bg-white h-14 font-primary py-2.5 flex items-center dark:bg-black">
+            <div className='mr-auto lg:pl-10 pl-5 dark:hidden'>
+                <img src="src\assets\logos\blue.svg" className="h-10 dark:hidden"/>
+            </div>
+            <div className='mr-auto lg:pl-10 pl-5 dark:block'>
+                <img src="src\assets\logos\saffron.svg" className="h-10 hidden dark:block"/>
             </div>
 
-            <div className='hidden lg:block ml-auto'>
-                <ul className='text-black paragraph-lg flex gap-10 pr-10'>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Home</a></li>
+            <div className='hidden lg:block ml-auto lg:flex pr-10 items-center'>
+                <ul className='text-blackparagraph-lg flex gap-10 pr-10 cursor-pointer'>
+                    <li className='hover:text-primary-500'><a href="/">Home</a></li>
+                    <li className='hover:text-primary-500'><a href="/">Services</a></li>
+                    <li className='hover:text-primary-500'><a href="/">Products</a></li>
+                    <li className='hover:text-primary-500'><a href="/">About</a></li>
                 </ul>
             </div>
 
-            <div className='relative lg:hidden w-full'>
-                <button className='text-black paragraph-md pl-auto left-auto'>
+            <div className='relative lg:hidden w-[30vh] flex justify-end'>
+                <button className='text-black paragraph-md pr-5'
+                onClick={() => setIsNavOpen(!isNavOpen)}>
                     <FaBars />
                 </button>
 
-                <div className='absolute flex flex-col h-[60vh] bg-white l-0 w-full'>
-                    <ul className=''>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
+                <div className={`rounded-md absolute h-[100vh] bg-white w-full top-5 transform transition-transform ${isNavOpen ? "opacity-100" : "opacity-0"}`} 
+                style={{transition: "transform 0.3s ease-in, opacity 0.3s ease-in"}}>
+                    <ul className='flex flex-col items-center justify-center pt-4 md:paragraph-lg gap-12'>
+                        <li className='text-black hover:text-primary-500 transition-colors duration-00 ease-in-out'><a href="#">Home</a></li>
+                        <li className='text-black hover:text-primary-500 transition-colors duration-200 ease-in-out'><a href="#">Services</a></li>
+                        <li className='text-black hover:text-primary-500 transition-colors duration-200 ease-in-out'><a href="#">Products</a></li>
+                        <li className='text-black hover:text-primary-500 transition-colors duration-200 ease-in-out'><a href="#">About</a></li>
                     </ul>
                 </div>
             </div>

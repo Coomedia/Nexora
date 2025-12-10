@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import DarkModeToggle from './components/darkModeToggle'
 import Navbar from './components/navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <DarkModeToggle />
+    </div>
   )
 }
 
