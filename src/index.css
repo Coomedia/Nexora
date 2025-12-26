@@ -62,8 +62,6 @@
 :root {
   --color-light: #F2F0EF;
   --color-text: #0E1111;
-  --card-primary: #A3D1F5;
-  --card-secondary: #F8E4A0;
 }
 
 
@@ -112,18 +110,18 @@
 /* components */
 @layer components {
   .card-primary {
-    background-color: var(--card-primary);
     border-radius: 10px;
     height: 100px;
     width: 200px;
     padding: 10px 0 0 10px;
+    margin-right: 10px;
   }
   .card-secondary {
-    background-color: var(--card-secondary);
     border-radius: 10px;
     height: 100px;
     width: 200px;
     padding: 10px 0 0 10px;
+    margin-left: 10px;
   }
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const  Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -23,9 +24,9 @@ const  Navbar = () => {
             </div>
 
             <div className='relative lg:hidden w-[30vh] flex justify-end'>
-                <button className='text-black paragraph-md pr-5 dark:text-white hover:text-primary-500 dark:hover:text-Secondary-500 transition-colors duration-200 ease-in-out'
+                <button className='text-black paragraph-md pr-5 dark:text-white hover:text-primary-500 dark:hover:text-Secondary-500 transition-all duration-200 ease-in-out'
                 onClick={() => setIsNavOpen(!isNavOpen)}>
-                    <FaBars />
+                    {isNavOpen === false ? <FaBars /> : <IoClose />}
                 </button>
 
                 <div className={`rounded-md absolute h-[100vh] bg-white w-full top-5 transform transition-transform ${isNavOpen ? "opacity-100" : "opacity-0"} dark:bg-black`} 

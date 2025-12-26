@@ -6,7 +6,7 @@ import Div from './components/divider'
 
 function App() {
   return (
-    <div className='h-[100vh] bg-white dark:bg-black text-black dark:text-white'>
+    <div className='h-screen bg-white dark:bg-black text-black dark:text-white'>
       <Navbar />
 
       <div className='text-center'>
@@ -16,22 +16,20 @@ function App() {
 
       <Div />
 
-      <div className='px-5 md:px-10'>
+      <div>
         <h1 className='text-center header-sm md:header-md lg:header-lg'>Our mission</h1>
-        <div className='relative'>
-          <div className='card-secondary md:w-[320px] md:h-[330px] lg:h-[326px] lg:w-[650px]'> 
-            <h2 className='paragraph-sm font-bold'>Step 1: Get you an online presence</h2>
-            <p className='paragraph-sm font-secondary pt-1'>Once you acquire one of our packages,<br/>
+        <div className='bg-white dark:bg-black'>
+          <div className='bg-Secondary-200 dark:bg-Secondary-800 card-secondary md:w-[320px] md:h-[330px] lg:h-[326px] lg:w-[650px] md:ml-10'> 
+            <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg font-bold'>Step 1: Get you an online presence</h2>
+            <p className='paragraph-sm md:paragraph-md lg:paragraph-lg font-secondary pt-1'>Once you acquire one of our packages,<br/>
             we’ll work on getting you some sort of<br/>
             media/online presence whether it’s<br/>
             making you a poster, logo, advert or website.</p>
           </div>
-
-          <img src="src\assets\arrow-saffron.svg" className='absolute w-full h-40 top-[50px] left-0'/>
           
-          <div className='card-primary mt-10 ml-auto md:w-[320px] md:h-[330px] lg:h-[326px] lg:w-[650px]'> 
-            <h2 className='paragraph-sm font-bold'>Step 1: Get you an online presence</h2>
-            <p className='paragraph-sm font-secondary pt-1'>Once you acquire one of our packages,<br/>
+          <div className='bg-primary-200 dark:bg-primary-800 card-primary mt-10 ml-auto md:w-[320px] md:h-[330px] lg:h-[326px] lg:w-[650px] md:mr-10'> 
+            <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg font-bold'>Step 1: Get you an online presence</h2>
+            <p className='paragraph-sm md:paragraph-md lg:paragraph-lg font-secondary pt-1'>Once you acquire one of our packages,<br/>
             we’ll work on getting you some sort of<br/>
             media/online presence whether it’s<br/>
             making you a poster, logo, advert or website.</p>
