@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import DarkModeToggle from './components/darkModeToggle'
-import Navbar from './components/navbar'
 import Footer from './components/footer'
 import Div from './components/divider'
 
 function App() {
   return (
     <div className='h-screen text-black dark:text-white'>
-      <Navbar />
+      <img className='h-20 md:h-40 lg:h-80 block dark:hidden place-self-center' src="./src/assets/logos/wordmark/blue_transparent_bg.svg"/>
+      <img className='h-20 md:h-40 lg:h-80 dark:block hidden place-self-center' src="./src/assets/logos/wordmark/saffron_transparent_bg.svg"/>
 
       <DarkModeToggle />
 
-      <div className='text-center'>
-        <h1 className='header-sm md:header-md lg:header-lg'>Nexora tech& media</h1>
+      <div className='text-center m-10'>
+        <h1 className='header-sm md:header-md lg:header-lg'>Nexora tech & media</h1>
         <p className='paragraph-sm md:paragraph-md lg:paragraph-lg'>Your business' key to online success</p>
       </div>
 
@@ -58,14 +58,14 @@ function App() {
 
       <div className='px-5 md:px-10 lg:px-20'>
         <h1 className='header-sm md:header-md lg:header-lg text-center'>OUR SERVICES</h1>
-        <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg mb-5'>-Here are our main services:</h2>
+        <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg mb-5'>• Here are our main services:</h2>
         <ul className='paragraph-sm font-secondary md:paragraph-md lg:paragraph-lg'>
-          <li>1.Advert making</li>
-          <li>2.Web development</li>
-          <li>3.Web hosting</li>
-          <li>4.Graphic & design</li>
-          <li>5.Brand identity design</li>
-          <li>6.Advert making</li>
+          <li>1. Advert making</li>
+          <li>2. Web development</li>
+          <li>3. Web hosting</li>
+          <li>4. Graphic & design</li>
+          <li>5. Brand identity design</li>
+          <li>6. Advert making</li>
         </ul>
       </div>
 

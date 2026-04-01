@@ -2,6 +2,7 @@ import React from 'react'
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
+import { FaWhatsapp } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -31,6 +32,10 @@ const Footer = () => {
                 <p>@nexora.tech.media</p>
               </a></li>
               </div>
+            </div>
+            <div className="w-full gap-5 paragraph-sm md:paragraph-md lg:paragraph-lg">
+              <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg py-5 font-medium'>Call or WhatsApp us at:</h2>
+              <p className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'>+254 792 651 690</p>
             </div>
         </div>
 
