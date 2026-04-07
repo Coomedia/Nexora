@@ -2,12 +2,14 @@ import { useState } from 'react'
 import DarkModeToggle from './components/darkModeToggle'
 import Footer from './components/footer'
 import Div from './components/divider'
+import light from './assets/light-wordmark.svg'
+import dark from './assets/dark-wordmark.svg' 
 
 function App() {
   return (
     <div className='h-screen text-black dark:text-white'>
-      <img className='h-20 md:h-40 lg:h-80 block dark:hidden place-self-center' src="./src/assets/logos/wordmark/blue_transparent_bg.svg"/>
-      <img className='h-20 md:h-40 lg:h-80 dark:block hidden place-self-center' src="./src/assets/logos/wordmark/saffron_transparent_bg.svg"/>
+      <img className='h-20 md:h-40 lg:h-80 block dark:hidden place-self-center' src={light}/>
+      <img className='h-20 md:h-40 lg:h-80 dark:block hidden place-self-center' src={dark}/>
 
       <DarkModeToggle />
 
