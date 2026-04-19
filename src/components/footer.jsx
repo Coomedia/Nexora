@@ -19,15 +19,15 @@ const Footer = () => {
             <div>
               <h2 className='paragraph-sm md:paragraph-md lg:paragraph-lg py-5 font-medium'>Our social media accounts:</h2>
               <div className='list-none flex lg:flex-row gap-5 flex-col paragraph-sm md:paragraph-md lg:paragraph-lg'>
-              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="/" className='flex items-center gap-2'>
+              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="https://www.youtube.com/@Nexora.tech.mediaKE" className='flex items-center gap-2'>
                 <FaYoutube />
                 <p>@Nexora.tech.mediaKE</p>
               </a></li>
-              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="/" className='flex items-center gap-2'>
+              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="https://www.tiktok.com/@nexora.tech.and.mediake" className='flex items-center gap-2'>
                 <FaTiktok />
                 <p>@nexora.tech.mediaKE</p>
               </a></li>
-              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="/" className='flex items-center gap-2'>
+              <li className='font-secondary hover:text-primary-500 dark:hover:text-Secondary-500'><a href="https://www.instagram.com/nexora.tech.media/" className='flex items-center gap-2'>
                 <FaInstagram />
                 <p>@nexora.tech.media</p>
               </a></li>

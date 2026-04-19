@@ -7,7 +7,7 @@ import dark from './assets/dark-wordmark.svg'
 
 function App() {
   return (
-    <div className='h-screen text-black dark:text-white'>
+    <div className='h-screen text-black dark:text-white font-primary'>
       <img className='h-20 md:h-40 lg:h-80 block dark:hidden place-self-center' src={light}/>
       <img className='h-20 md:h-40 lg:h-80 dark:block hidden place-self-center' src={dark}/>
 
